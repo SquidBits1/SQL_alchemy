@@ -32,6 +32,7 @@ class Model:
         with open('emails.txt', 'a') as f:
             f.write(self.email + '\n')
 
+
 class View(ttk.Frame):
     def __init__(self, parent):
         super().__init__(parent)
@@ -129,6 +130,7 @@ class Controller:
         except ValueError as error:
             # show an error message
             self.view.show_error(error)
+
 
 class App(tk.Tk):
     def __init__(self):
